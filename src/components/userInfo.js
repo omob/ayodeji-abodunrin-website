@@ -1,0 +1,51 @@
+import React from "react";
+import styled from "styled-components";
+import { StaticImage } from "gatsby-plugin-image";
+
+const Root = styled.div`
+  text-align: center;
+`;
+
+const UserName = styled.h2`
+  font-size: 22px;
+  margin-bottom: 5px;
+  margin-top: 0.5em;
+`;
+
+const Profession = styled.h3`
+  font-weight: bold;
+  background: ${({ theme }) => theme.colors.secondaryGradient};
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-bottom: 5px;
+  font-size: 26px;
+  letter-spacing: 2px;
+`;
+
+const UserInfo = () => {
+  const userName = "Ayodeji Abodunrin";
+  const userProfession = "Software Engineer";
+
+  return (
+    <Root>
+      <StaticImage
+        src={"../images/profile.png"}
+        alt={userName}
+        layout="constrained"
+        height={150}
+        quality={100}
+      />
+      <UserName>{userName}</UserName>
+      <Profession>{userProfession}</Profession>
+      <StaticImage
+        src={"../images/prog-languages.svg"}
+        alt="Languages"
+        layout="constrained"
+        height={40}
+        quality={100}
+      />
+    </Root>
+  );
+};
+
+export default UserInfo;
