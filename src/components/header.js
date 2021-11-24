@@ -40,9 +40,9 @@ const Header = ({ siteTitle }) => {
       <NavBar>
         <TopBarLink>
           <Link to="/">Intro</Link>
-          <Link to="/about">About</Link>
+          {/* <Link to="/about">About</Link> */}
           <Link to="/projects">Projects</Link>
-          <Link to="/experience">Experience</Link>
+          <Link to="/work-history">Work History</Link>
           <Link to="/hobbies">Hobbies</Link>
         </TopBarLink>
       </NavBar>

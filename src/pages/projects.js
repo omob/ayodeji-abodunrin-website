@@ -9,6 +9,13 @@ import { Link } from "gatsby";
 const PortfolioPageWrapper = styled(SectionWrapper)`
   padding-top: 1em;
   padding-bottom: 5em;
+
+  @media (min-width: 768px) {
+    max-width: 800px;
+  }
+  @media (min-width: 900px) {
+    max-width: 100%;
+  }
 `;
 
 const ProjectItem = styled.div`
@@ -17,6 +24,14 @@ const ProjectItem = styled.div`
   width: 350px;
   background-color: #0a0a0a;
   margin-bottom: 2em;
+
+  @media (min-width: 768px) {
+    width: 350px;
+  }
+
+  @media (min-width: 1320px) {
+    width: 260px;
+  }
 `;
 
 const ProjectTitle = styled.h2`
