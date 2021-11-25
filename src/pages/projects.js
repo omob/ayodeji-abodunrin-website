@@ -1,15 +1,14 @@
-import { StaticImage } from "gatsby-plugin-image";
+import { graphql } from "gatsby";
 import React from "react";
 import styled from "styled-components";
 import Layout from "./../components/layout";
+import Project from "./../components/project";
 import SEO from "./../components/seo";
-import { SectionWrapper, SocialLinkWrapper } from "./index";
-import { Link } from "gatsby";
+import { SectionWrapper } from "./index";
 
 const PortfolioPageWrapper = styled(SectionWrapper)`
   padding-top: 1em;
   padding-bottom: 5em;
-
   @media (min-width: 768px) {
     max-width: 800px;
   }
@@ -18,37 +17,10 @@ const PortfolioPageWrapper = styled(SectionWrapper)`
   }
 `;
 
-const ProjectItem = styled.div`
-  position: relative;
-  padding: 20px;
-  width: 350px;
-  background-color: #0a0a0a;
-  margin-bottom: 2em;
-
-  @media (min-width: 768px) {
-    width: 350px;
-  }
-
-  @media (min-width: 1320px) {
-    width: 260px;
-  }
-`;
-
-const ProjectTitle = styled.h2`
-  font-size: 22px;
-  margin: 10px;
-`;
-
-const ProjectLinkButton = styled(SocialLinkWrapper)`
-  font-size: 12px;
-  padding: 0;
-  line-height: 20px;
-`;
-
-const ProjectStack = styled.div`
-  position: absolute;
-  right: 20px;
-  top: 20px;
+const PageTitle = styled.h2`
+  background: ${({ theme }) => theme.colors.secondaryGradient};
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 `;
 
 const ProjectsWrapper = styled.div`
@@ -57,7 +29,8 @@ const ProjectsWrapper = styled.div`
   justify-content: space-between;
 `;
 
-function ProjectsPage(props) {
+function ProjectsPage({ data }) {
+  const projects = data.projects.nodes;
   return (
     <Layout>
       <SEO
@@ -65,98 +38,18 @@ function ProjectsPage(props) {
         description="Software Engineer - Ayodeji Abodunrin Portfolio Page"
       />
       <PortfolioPageWrapper>
-        <h2>Portfolios </h2>
+        <PageTitle>Portfolios </PageTitle>
         <ProjectsWrapper>
-          <ProjectItem>
-            <ProjectStack>
-              <StaticImage
-                src={"../images/portfolio/node_react.png"}
-                alt={""}
-                layout="constrained"
-                height={20}
-                quality={100}
-              />
-            </ProjectStack>
-            <StaticImage
-              src={"../images/portfolio/lms.png"}
-              alt={""}
-              layout="constrained"
-              height={200}
-              quality={100}
+          {projects.map(({ frontmatter, id }) => (
+            <Project
+              key={id}
+              title={frontmatter.title}
+              slug={frontmatter.slug}
+              stack={frontmatter.stack}
+              stackImage={frontmatter.stackImage}
+              thumbnail={frontmatter.thumbnail}
             />
-            <ProjectTitle>A Learning Management System</ProjectTitle>
-            <ProjectLinkButton>
-              <Link to="/projects">Details</Link>
-            </ProjectLinkButton>
-          </ProjectItem>
-          <ProjectItem>
-            <ProjectStack>
-              <StaticImage
-                src={"../images/portfolio/node_react.png"}
-                alt={""}
-                layout="constrained"
-                height={20}
-                quality={100}
-              />
-            </ProjectStack>
-            <StaticImage
-              src={"../images/portfolio/lms.png"}
-              alt={""}
-              layout="constrained"
-              height={200}
-              quality={100}
-            />
-            <ProjectTitle>A Learning Management System</ProjectTitle>
-            <ProjectLinkButton>
-              <Link to="/projects">Details</Link>
-            </ProjectLinkButton>
-          </ProjectItem>
-
-          <ProjectItem>
-            <ProjectStack>
-              <StaticImage
-                src={"../images/portfolio/node_react.png"}
-                alt={""}
-                layout="constrained"
-                height={20}
-                quality={100}
-              />
-            </ProjectStack>
-            <StaticImage
-              src={"../images/portfolio/lms.png"}
-              alt={""}
-              layout="constrained"
-              height={200}
-              quality={100}
-            />
-            <ProjectTitle>A Learning Management System</ProjectTitle>
-            <ProjectLinkButton>
-              <Link to="/projects">Details</Link>
-            </ProjectLinkButton>
-          </ProjectItem>
-
-          <ProjectItem>
-            <ProjectStack>
-              <StaticImage
-                src={"../images/portfolio/node_react.png"}
-                alt={""}
-                layout="constrained"
-                height={20}
-                quality={100}
-              />
-            </ProjectStack>
-            <StaticImage
-              src={"../images/portfolio/lms.png"}
-              alt={""}
-              layout="constrained"
-              height={200}
-              quality={100}
-            />
-            <ProjectTitle>A Learning Management System</ProjectTitle>
-            <ProjectLinkButton>
-              <Link to="/projects">Details</Link>
-            </ProjectLinkButton>
-          </ProjectItem>
+          ))}
         </ProjectsWrapper>
       </PortfolioPageWrapper>
     </Layout>
@@ -164,3 +57,38 @@ function ProjectsPage(props) {
 }
 
 export default ProjectsPage;
+
+export const query = graphql`
+  {
+    projects: allMarkdownRemark {
+      nodes {
+        frontmatter {
+          featuredImage
+          slug
+          stack
+          title
+          stackImage {
+            childImageSharp {
+              gatsbyImageData(
+                placeholder: BLURRED
+                formats: [AUTO, WEBP, AVIF]
+                height: 20
+              )
+            }
+          }
+          thumbnail {
+            childImageSharp {
+              gatsbyImageData(
+                width: 200
+                placeholder: BLURRED
+                formats: [AUTO, WEBP, AVIF]
+                quality: 100
+              )
+            }
+          }
+        }
+        id
+      }
+    }
+  }
+`;

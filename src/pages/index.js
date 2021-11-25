@@ -28,7 +28,6 @@ export const HeadingText = styled(HeaderTitle)`
 
   span {
     background: ${({ theme }) => theme.colors.secondaryGradient};
-    box-shadow: 0px 4px 4px 0px hsla(0, 0%, 0%, 0.25);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 900;

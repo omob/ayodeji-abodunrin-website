@@ -35,7 +35,13 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: "projects",
+        path: `${__dirname}/src/projects/`,
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -49,18 +55,10 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-transformer-remark`,
+    },
+    {
       resolve: `gatsby-plugin-styled-components`,
     },
-    // {
-    //   resolve: `gatsby-source-contentful`,
-    //   options: {
-    //     spaceId: process.env.CONTENTFUL_SPACEID,
-    //     // Learn about environment variables: https://gatsby.dev/env-vars
-    //     accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-    //   },
-    // },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 };

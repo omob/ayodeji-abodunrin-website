@@ -9,6 +9,12 @@ const Container = styled(SectionWrapper)`
   padding-bottom: 5em;
 `;
 
+const PageTitle = styled.h2`
+  background: ${({ theme }) => theme.colors.secondaryGradient};
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+`;
+
 function Hobbies(props) {
   return (
     <Layout>
@@ -18,7 +24,7 @@ function Hobbies(props) {
       />
       <Container>
         {" "}
-        <h2>Outside Programming....</h2>
+        <PageTitle>Outside Programming....</PageTitle>
       </Container>
     </Layout>
   );
