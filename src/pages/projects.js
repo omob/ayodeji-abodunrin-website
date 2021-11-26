@@ -19,6 +19,8 @@ const PortfolioPageWrapper = styled(SectionWrapper)`
 
 const PageTitle = styled.h2`
   background: ${({ theme }) => theme.colors.secondaryGradient};
+  font-size: 48px;
+  padding: 15px 0;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 `;
@@ -31,6 +33,7 @@ const ProjectsWrapper = styled.div`
 
 function ProjectsPage({ data }) {
   const projects = data.projects.nodes;
+  console.log(projects);
   return (
     <Layout>
       <SEO
@@ -60,7 +63,9 @@ export default ProjectsPage;
 
 export const query = graphql`
   {
-    projects: allMarkdownRemark {
+    projects: allMarkdownRemark(
+      filter: { frontmatter: { type: { ne: "experience" } } }
+    ) {
       nodes {
         frontmatter {
           featuredImage
@@ -79,7 +84,6 @@ export const query = graphql`
           thumbnail {
             childImageSharp {
               gatsbyImageData(
-                width: 200
                 placeholder: BLURRED
                 formats: [AUTO, WEBP, AVIF]
                 quality: 100

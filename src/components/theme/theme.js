@@ -32,6 +32,7 @@ export const darkTheme = {
   theme: "dark",
   colors: {
     dark: "#050505",
-    secondaryGradient: "linear-gradient(180deg, #ff732d 0%, #ef5337 100%)",
+    secondaryGradient:
+      "linear-gradient(180deg, #ffa72d 0%, #ffa72d 0%, #db2117 100%)",
   },
 };
