@@ -281,7 +281,6 @@ h3 {
   margin-bottom: 1.45rem;
   color: inherit;
   font-family: 'Oleo Script', cursive;
-  font-weight: bold;
   font-size: 1.38316rem;
 }
 h4 {

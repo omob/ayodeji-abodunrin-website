@@ -19,6 +19,8 @@ export const SectionWrapper = styled.section`
 
   p {
     font-weight: 300;
+    font-size: 1.2em;
+    line-height: 1.6em;
   }
 `;
 export const HeadingText = styled(HeaderTitle)`

@@ -33,8 +33,14 @@ const ProjectLinkButton = styled(SocialLinkWrapper)`
 
 const ProjectStack = styled.div`
   position: absolute;
+  z-index: 10;
   right: 20px;
   top: 20px;
+
+  @media (min-width: 1320px) {
+    right: 10px;
+    top: 10px;
+  }
 `;
 
 const Project = ({ title, stack, slug, stackImage, thumbnail }) => {
