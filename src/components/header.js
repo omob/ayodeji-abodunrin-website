@@ -41,8 +41,9 @@ const Header = ({ siteTitle }) => {
         <TopBarLink>
           <Link to="/">Intro</Link>
           {/* <Link to="/about">About</Link> */}
-          <Link to="/projects">Projects</Link>
+          <Link to="/portfolio">Portfolio</Link>
           <Link to="/work-history">Work History</Link>
+          <Link to="/blogs">Blogs</Link>
           <Link to="/hobbies">Hobbies</Link>
         </TopBarLink>
       </NavBar>

@@ -2,7 +2,7 @@ import { graphql, Link } from "gatsby";
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import Layout from "../components/layout";
-import SEO from "../components/seo";
+import Seo from "../components/seo";
 
 const SectionWrapper = styled.section`
   padding-left: 10%;
@@ -28,9 +28,11 @@ const SectionWrapper = styled.section`
     color: inherit;
   }
   @media (max-width: 768px) {
-    ${"" /* p {
+    ${
+      "" /* p {
       font-size: 1.26em;
-    } */}
+    } */
+    }
   }
 `;
 
@@ -45,9 +47,11 @@ const HeaderBanner = styled(SectionWrapper)`
     font-size: 4em;
     margin-bottom: 0px;
     font-weight: bolder;
-    ${"" /* background: ${({ theme }) => theme.colors.secondaryGradient};
+    ${
+      "" /* background: ${({ theme }) => theme.colors.secondaryGradient};
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */}
+    -webkit-text-fill-color: transparent; */
+    }
   }
 `;
 const Content = styled(SectionWrapper)`
@@ -76,12 +80,13 @@ const BreadCrumbs = styled.div`
 const ProjectDetail = ({ data: { project } }) => {
   return (
     <Layout>
-      <SEO title={project.frontmatter.title} />
+      <Seo title={project.frontmatter.title} />
 
       <HeaderBanner>
         <h1>{project.frontmatter.title}</h1>
         <BreadCrumbs>
-          <Link to="/">Home</Link> {">"} <Link to="/projects"> Projects </Link>
+          <Link to="/">Home</Link> {">"}{" "}
+          <Link to="/portfolio"> Porfolios </Link>
           {">"} {project.frontmatter.title}
         </BreadCrumbs>
       </HeaderBanner>

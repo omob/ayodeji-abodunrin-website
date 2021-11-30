@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../components/layout";
-import SEO from "../components/seo";
-import { SectionWrapper } from "./index";
+import Seo from "../components/seo";
+import { SectionWrapper } from "../components/common";
 import styled from "styled-components";
 
 const Container = styled(SectionWrapper)`
@@ -18,7 +18,7 @@ const PageTitle = styled.h2`
 function Hobbies(props) {
   return (
     <Layout>
-      <SEO
+      <Seo
         title="Hobbies"
         description="Software Engineer - Ayodeji Abodunrin Hobbies"
       />

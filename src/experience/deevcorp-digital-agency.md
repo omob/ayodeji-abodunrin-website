@@ -1,8 +1,9 @@
 ---
 company: Deevcorp Digital Agency.
-role: Software Engineer
-date: April 2021 - Date
+role: Lead Software Engineer
+date: 2020 - Date
 type: experience
+postedDate: 2021-10-15
 ---
 
 - Developed an Interactive self-service feedback platform for all employees within the bank. The application provided a standardized channel for employees to provide immediate feedback on salient issues that may be affecting attitude and productivity.

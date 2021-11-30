@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../components/layout";
-import SEO from "../components/seo";
-import { SectionWrapper } from "./index";
+import Seo from "../components/seo";
+import { SectionWrapper } from "../components/common";
 import styled from "styled-components";
 import { graphql } from "gatsby";
 
@@ -61,13 +61,13 @@ function WorkHistory({ data }) {
   const experiences = data.experience.nodes;
   return (
     <Layout>
-      <SEO
+      <Seo
         title="Work History"
-        description="Software Engineer - Ayodeji Abodunrin Work Work History"
+        description="Software Engineer - Ayodeji Abodunrin's Work History"
       />
       <Container>
         {" "}
-        <PageTitle>Relevant Experience</PageTitle>
+        <PageTitle>Work History</PageTitle>
         <Content>
           {experiences.map(({ frontmatter, id, html }) => (
             <ExperienceWrapper key={id}>
@@ -98,6 +98,7 @@ export const query = graphql`
   {
     experience: allMarkdownRemark(
       filter: { frontmatter: { type: { eq: "experience" } } }
+      sort: { fields: frontmatter___postedDate, order: DESC }
     ) {
       nodes {
         frontmatter {

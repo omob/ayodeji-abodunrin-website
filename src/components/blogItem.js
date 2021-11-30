@@ -2,9 +2,9 @@ import { Link } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import React from "react";
 import styled from "styled-components";
-import { SocialLinkWrapper } from "../components/common";
+import { SocialLinkWrapper } from "../pages";
 
-const ProjectItem = styled.div`
+const BlogItem = styled.div`
   position: relative;
   padding: 20px;
   width: 350px;
@@ -20,18 +20,18 @@ const ProjectItem = styled.div`
   }
 `;
 
-const ProjectTitle = styled.h2`
+const BlogTitle = styled.h2`
   font-size: 22px;
   margin: 10px;
 `;
 
-const ProjectLinkButton = styled(SocialLinkWrapper)`
+const BlogLinkButton = styled(SocialLinkWrapper)`
   font-size: 12px;
   padding: 0;
   line-height: 20px;
 `;
 
-const ProjectStack = styled.div`
+const BlogStack = styled.div`
   position: absolute;
   z-index: 10;
   right: 20px;
@@ -43,19 +43,17 @@ const ProjectStack = styled.div`
   }
 `;
 
-const Project = ({ title, stack, slug, stackImage, thumbnail }) => {
+const Blog = ({ title, stack, slug, stackImage, thumbnail }) => {
   return (
-    <ProjectItem>
-      <ProjectStack>
-        <GatsbyImage image={getImage(stackImage)} alt={stack} />
-      </ProjectStack>
+    <BlogItem>
+      <BlogStack></BlogStack>
       <GatsbyImage image={getImage(thumbnail)} alt={title} />
-      <ProjectTitle>{title} </ProjectTitle>
-      <ProjectLinkButton>
-        <Link to={`/projects/${slug}`}>Details</Link>
-      </ProjectLinkButton>
-    </ProjectItem>
+      <BlogTitle>{title} </BlogTitle>
+      <BlogLinkButton>
+        <Link to={`/Blogs/${slug}`}>Details</Link>
+      </BlogLinkButton>
+    </BlogItem>
   );
 };
 
-export default Project;
+export default Blog;

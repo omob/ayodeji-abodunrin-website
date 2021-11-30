@@ -3,8 +3,10 @@ import React from "react";
 import styled from "styled-components";
 import Layout from "./../components/layout";
 import Project from "./../components/project";
-import SEO from "./../components/seo";
-import { SectionWrapper } from "./index";
+import Seo from "./../components/seo";
+import {
+  SectionWrapper,
+} from "../components/common";
 
 const PortfolioPageWrapper = styled(SectionWrapper)`
   padding-top: 1em;
@@ -33,10 +35,9 @@ const ProjectsWrapper = styled.div`
 
 function ProjectsPage({ data }) {
   const projects = data.projects.nodes;
-  console.log(projects);
   return (
     <Layout>
-      <SEO
+      <Seo
         title="Projects"
         description="Software Engineer - Ayodeji Abodunrin Portfolio Page"
       />

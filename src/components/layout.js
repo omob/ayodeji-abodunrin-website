@@ -25,32 +25,32 @@ const Layout = ({ children }) => {
     }
   `);
 
-  const [theme, setTheme] = useState(null);
+  const [theme, setTheme] = useState(uiTheme.DARK);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
-  const loadTheme = () => {
-    const storedTheme = storage.getTheme();
-    if (!storedTheme) return setTheme(uiTheme.DARK);
+  // const loadTheme = () => {
+  //   const storedTheme = storage.getTheme();
+  //   if (!storedTheme) return setTheme(uiTheme.DARK);
 
-    setTheme(storedTheme);
-  };
+  //   setTheme(storedTheme);
+  // };
 
-  useEffect(() => {
-    loadTheme();
-  }, []);
+  // useEffect(() => {
+  //   loadTheme();
+  // }, []);
 
-  const toggleTheme = () => {
-    if (theme === uiTheme.LIGHT) {
-      setTheme(uiTheme.DARK);
-      storage.save(uiTheme.DARK);
-    } else {
-      setTheme(uiTheme.LIGHT);
-      storage.save(uiTheme.LIGHT);
-    }
-  };
+  // const toggleTheme = () => {
+  //   if (theme === uiTheme.LIGHT) {
+  //     setTheme(uiTheme.DARK);
+  //     storage.save(uiTheme.DARK);
+  //   } else {
+  //     setTheme(uiTheme.LIGHT);
+  //     storage.save(uiTheme.LIGHT);
+  //   }
+  // };
 
   return (
-    <ThemeProvider theme={theme === uiTheme.LIGHT ? lightTheme : darkTheme}>
+    <ThemeProvider theme={darkTheme}>
       <>
         <GlobalStyles />
         <Header siteTitle={data.site.siteMetadata.title} />

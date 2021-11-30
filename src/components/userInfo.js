@@ -22,6 +22,29 @@ const Profession = styled.h3`
   letter-spacing: 2px;
 `;
 
+const ContactInfo = styled.div`
+  position: relative;
+  top: 50px;
+  width: 100%;
+  text-align: center;
+
+  p {
+    line-height: 1.5em;
+    font-size: 14px;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+
+  a {
+    color: inherit;
+    font-size: 12px;
+    display: block;
+    font-weight: 300;
+    line-height: 1.6em;
+  }
+`;
+
 const UserInfo = () => {
   const userName = "Ayodeji Abodunrin";
   const userProfession = "Software Engineer";
@@ -44,6 +67,21 @@ const UserInfo = () => {
         height={40}
         quality={100}
       />
+
+      <ContactInfo>
+        <p>
+          You have a project in mind or something better{" "}
+          <span role="img" aria-label="smiley">
+            &#128522;
+          </span>
+          ?
+        </p>
+        <a href="mailto:aboayosam@gmail.com">Email: aboayosam@gmail.com</a>
+        <a href="tel:+2348153706096">Call: +234(0)8153706096</a>
+        <a href="https://www.linkedin.com/in/abodunrinayodeji/">
+          LinkedIn: abodunrinayodeji
+        </a>
+      </ContactInfo>
     </Root>
   );
 };

@@ -52,22 +52,22 @@ The apps developed for MLS gives them more transparency and accuracy, saving eve
 
 #### Home Page
 
-![Landing Page Screen ](../images/portfolio/featured/mls/Home Page.png)
+![Landing Page Screen ](../images/portfolio/featured/mls/Home-Page.png)
 
 #### People Page
 
-![People Page Screen ](../images/portfolio/featured/mls/PEOPLE PAGE.png)
+![People Page Screen ](../images/portfolio/featured/mls/PEOPLE-PAGE.png)
 
 #### Schedule Page
 
-![Schedule Page Screen ](../images/portfolio/featured/mls/Schedule Page.png)
+![Schedule Page Screen ](../images/portfolio/featured/mls/Schedule-Page.png)
 
 #### Create New Shift Page
 
-![Create Shift Page Screen ](../images/portfolio/featured/mls/CREATE SHIFT.png)
+![Create Shift Page Screen ](../images/portfolio/featured/mls/CREATE-SHIFT.png)
 
 #### Timesheet Page
 
 ![Timesheet Page Screen ](../images/portfolio/featured/mls/Timesheet.png)
 <br />
-![Timesheet Page Screen ](../images/portfolio/featured/mls/timesheet detail.png)
+![Timesheet Page Screen ](../images/portfolio/featured/mls/timesheet-detail.png)
