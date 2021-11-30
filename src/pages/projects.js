@@ -65,6 +65,7 @@ export const query = graphql`
   {
     projects: allMarkdownRemark(
       filter: { frontmatter: { type: { ne: "experience" } } }
+      sort: { fields: frontmatter___postedDate, order: DESC }
     ) {
       nodes {
         frontmatter {

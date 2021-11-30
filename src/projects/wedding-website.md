@@ -5,9 +5,12 @@ stackImage: ../images/portfolio/stack/node-react-contentful.png
 slug: wedding-website
 thumbnail: ../images/portfolio/thumbnails/tomade2021.png
 featuredImage: ../images/portfolio/featured/lms.png
+postedDate: 2021-08-15
 ---
 
 ## Love is beautiful.
+
+![Landing Page ](../images/portfolio/featured/tomade/home-page.png)
 
 When Tosin and Ade got engaged, they wanted a website where their loved ones could read their love story, view their beautiful picture gallery, and easily send them wedding presents- in cash or in kind.
 
@@ -19,4 +22,20 @@ Well-wishers could easily choose to send the couple monetary gifts via bank tran
 
 And those who wanted to purchase gifts could choose from a range of items the couple had requested. What could be better than giving someone exactly what they want?
 
+### Gallery
+
+![Gallery Page ](../images/portfolio/featured/tomade/gallery.png)
+
+### Gift Page
+
+![Gift Page ](../images/portfolio/featured/tomade/gift-page-top.png)
+![Gift Page ](../images/portfolio/featured/tomade/gift-page-bottom.png)
+
 And oh, the couple loved their website!
+<br />
+
+<hr />
+
+#### [Go to Website](https://tomade2021.netlify.com/ "Samson & Tomisin")
+
+#### [View Github Repo](https://github.com/omob/tomade2021/ "Tomade2021")

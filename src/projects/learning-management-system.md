@@ -5,6 +5,7 @@ stackImage: ../images/portfolio/stack/node-react.png
 slug: learning-management-system
 thumbnail: ../images/portfolio/thumbnails/lms.png
 featuredImage: ../images/portfolio/featured/lms.png
+postedDate: 2020-11-15
 ---
 
 In an attempt to improve the student/lecturer relationship, we developed a learning management system (LMS) with a feature for result processing. The solution incorporates a learning management system and a system for record processing.
@@ -22,3 +23,7 @@ A developed application with a learning management system and student record sys
 With such an application in place, everything involving the school’s regular activity can be seen on a single dashboard. Also, the development of this software for a university will abolish the need for having multiple management software for each department, aid the long term management and planning of all the departments of the university, and reduce the chances of mistakes in typing and re-entry of data which is common in the university management systems where it is done manually and prone to human mistakes and errors. The benefits embedded in the adoption of single application software that manages both the learning management system and student records in universities are endless.
 
 <!-- <img src="../images/portfolio/stack/react-dotnet.png" alt="Angular" style="width:50px;"/> -->
+
+#### [Go to Demo App](https://learning-management-syst-7a244.web.app/ "LMS System")
+
+#### [View Github Repo](https://github.com/omob/LMS-FRONTEND "LMS FE")

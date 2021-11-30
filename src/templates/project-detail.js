@@ -10,12 +10,23 @@ const SectionWrapper = styled.section`
   padding-top: 4em;
   padding-bottom: 4em;
 
+  h4 {
+    font-weight: normal;
+  }
   p {
     font-weight: 300;
     font-size: 1.2em;
     line-height: 1.6em;
   }
 
+  ul li {
+    font-weight: 300;
+    line-height: 1.5em;
+  }
+
+  a {
+    color: inherit;
+  }
   @media (max-width: 768px) {
     ${"" /* p {
       font-size: 1.26em;
