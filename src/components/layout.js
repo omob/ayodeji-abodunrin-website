@@ -85,7 +85,8 @@ const Layout = ({ children }) => {
             ></ToggleSidebarButton>
             <SideBar isOpen={isSidebarOpen}></SideBar>
           </>
-          <main onClick={handleCloseSidebar}>{children}</main>
+          {/* <main onClick={handleCloseSidebar}>{children}</main> */}
+          <main>{children}</main>
         </MainWraper>
       </>
     </ThemeProvider>

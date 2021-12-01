@@ -21,7 +21,7 @@ const HomePageContent = styled(SectionWrapper)`
   }
 
   @media (max-width: 768px) {
-    padding-top: 5em;
+    padding-top: 4em;
   }
 `;
 
