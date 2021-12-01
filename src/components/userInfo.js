@@ -43,6 +43,16 @@ const ContactInfo = styled.div`
     font-weight: 300;
     line-height: 1.6em;
   }
+
+  @media (min-width: 1500px) {
+    p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    a {
+      font-size: 14px;
+    }
+  }
 `;
 
 const UserInfo = () => {

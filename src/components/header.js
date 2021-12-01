@@ -15,6 +15,10 @@ const NavBar = styled.nav`
   grid-template-columns: auto;
   justify-items: end;
   height: 80px;
+
+  @media (max-width: 768px) {
+    visibility: hidden;
+  }
 `;
 
 const TopBarLink = styled.div`

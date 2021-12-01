@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
+import { StaticImage } from "gatsby-plugin-image";
 import {
   SectionWrapper,
   SocialLinkWrapper,
@@ -11,11 +12,21 @@ import {
 const HomePageContent = styled(SectionWrapper)`
   padding-top: 7em;
   padding-bottom: 5em;
+  text-align: center;
+  margin: auto;
+
+  @media (min-width: 1500px) {
+    width: 90%;
+    margin: auto;
+  }
+
+  @media (max-width: 768px) {
+    padding-top: 5em;
+  }
 `;
 
 const BodyText = styled.p`
   text-align: center;
-  }
 `;
 
 const SocialLink = ({ label, url }) => {
@@ -26,6 +37,15 @@ const SocialLink = ({ label, url }) => {
   );
 };
 
+const UserImageWrapper = styled.div`
+  display: none;
+
+  @media (max-width: 768px) {
+    display: block;
+    margin-bottom: 2em;
+  }
+`;
+
 const IndexPage = () => {
   return (
     <Layout>
@@ -34,6 +54,15 @@ const IndexPage = () => {
         description="Software Engineer - Ayodeji Abodunrin Personal Website"
       />
       <HomePageContent>
+        <UserImageWrapper>
+          <StaticImage
+            src={"../images/profile.png"}
+            alt={" Ayodeji Abodunrin"}
+            layout="constrained"
+            height={120}
+            quality={100}
+          />
+        </UserImageWrapper>
         <HeadingText>
           {" "}
           Hi, <span>I'm Ayo! </span>

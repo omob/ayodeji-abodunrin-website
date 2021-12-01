@@ -21,6 +21,7 @@ const PageTitle = styled.h2`
   background: ${({ theme }) => theme.colors.secondaryGradient};
   font-size: 48px;
   padding: 15px 0;
+  line-height: 0.9em;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 `;

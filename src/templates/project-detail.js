@@ -1,5 +1,5 @@
 import { graphql, Link } from "gatsby";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
@@ -47,10 +47,9 @@ const HeaderBanner = styled(SectionWrapper)`
     font-size: 4em;
     margin-bottom: 0px;
     font-weight: bolder;
-    ${
-      "" /* background: ${({ theme }) => theme.colors.secondaryGradient};
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
+
+    @media (max-width: 768px) {
+      font-size: 3em;
     }
   }
 `;

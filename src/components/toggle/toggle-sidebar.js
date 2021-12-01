@@ -4,17 +4,21 @@ import styled from "styled-components";
 const ToggleButton = styled.button.attrs(props => ({
   className: props.className,
 }))`
+
+    @media(min-width: 768px) {
+      display: none;
+    }
     width: 50px;
     height: 45px;
     border: none;
     background: transparent;
-    left: 1em;
+    right: 1em;
     z-index: 1000;
     transition: 0.7s;
     outline: 0;
     margin-top: 12px;
     position: fixed;
-    top: 39%;
+    top: 0;
     z-index: 1000;
   
     & > span {
@@ -33,8 +37,8 @@ const ToggleButton = styled.button.attrs(props => ({
     }
   
     &.toggled {
-      transform: translateX(300px);
-    
+      ${'' /* transform: translateX(300px); */}
+       transition: .1s;
       .top-bar {
         transform: rotate(45deg);
         transform-origin: -8% 90%;
@@ -49,8 +53,8 @@ const ToggleButton = styled.button.attrs(props => ({
 
       @media (max-width: 550px) {
         &.toggled {
-          transform: translateX(250px);
-          top: 50%;
+          ${'' /* transform: translateX(250px); */}
+          ${'' /* top: 50%; */}
         }
       }
     }
