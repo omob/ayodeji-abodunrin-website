@@ -4,8 +4,8 @@ import { useEffect, useState } from 'react';
 
 function useWindowDimensions(props) {
     
-  const [width, setWidth] = useState(window?.innerWidth);
-  const [height, setHeight] = useState(window?.innerHeight);
+  const [width, setWidth] = useState(null);
+  const [height, setHeight] = useState(null);
   
   const updateDimensions = () => {
     setWidth(window.innerWidth);
@@ -14,6 +14,8 @@ function useWindowDimensions(props) {
 
   useEffect(() => {
     if (typeof window !== `undefined`) {
+      setWidth(window.innerWidth);
+      setHeight(window.innerHeight);
       window.addEventListener("resize", updateDimensions);
     }
     return () => window?.removeEventListener("resize", updateDimensions);

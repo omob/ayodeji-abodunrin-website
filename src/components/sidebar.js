@@ -74,6 +74,12 @@ const Divider = styled.div`
   background: ${({ theme }) => theme.bodyBg};
   height: 2px;
   margin-bottom: 3em;
+
+  display: none;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
 `;
 
 const SideBar = ({ isOpen = true }) => {
