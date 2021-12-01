@@ -31,7 +31,7 @@ const Layout = ({ children }) => {
   `);
 
   const [theme, setTheme] = useState(uiTheme.DARK);
-  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const { width, height } = useWindowDimensions();
 
   useEffect(() => {
@@ -40,7 +40,7 @@ const Layout = ({ children }) => {
     }
 
     setIsSidebarOpen(false);
-  }, [width, height]);
+  }, [width]);
 
   // const loadTheme = () => {
   //   const storedTheme = storage.getTheme();
