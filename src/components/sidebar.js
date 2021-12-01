@@ -28,6 +28,10 @@ const SideNavWrapper = styled.div`
     }
   }
 
+  @media (min-width: 768px) {
+    padding-top: 6em;
+  }
+
   @media screen and (max-height: 550px) {
     & {
       overflow: scroll;
