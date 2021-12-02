@@ -1,7 +1,7 @@
 ---
 title: Timesheet Management and Shift Scheduling System
 stack: Angular, Node.js, MongoDB
-stackImage: ../images/portfolio/stack/node-react.png
+stackImage: ../images/portfolio/stack/node-react-mongo.png
 slug: shift-scheduling-system
 thumbnail: ../images/portfolio/thumbnails/mls.png
 featuredImage: ../images/portfolio/featured/mls.png
