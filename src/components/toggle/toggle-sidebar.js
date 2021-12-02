@@ -5,7 +5,7 @@ const ToggleButton = styled.button.attrs(props => ({
   className: props.className,
 }))`
 
-    @media(min-width: 768px) {
+    @media(min-width: 769px) {
       display: none;
     }
     width: 50px;
@@ -24,7 +24,7 @@ const ToggleButton = styled.button.attrs(props => ({
     & > span {
         height: 4px;
         content: "-";
-        background-color: #b5b5b5;
+         background: ${({ theme }) => theme.colors.secondaryGradient};
         display: block;
         margin: 6px 4px 8px -2px;
         width: 35px;

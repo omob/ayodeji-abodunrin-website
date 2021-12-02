@@ -20,6 +20,10 @@ const Profession = styled.h3`
   padding-bottom: 5px;
   font-size: 26px;
   letter-spacing: 2px;
+
+  @media (max-width: 550px) {
+    font-size: 24px;
+  }
 `;
 
 const ContactInfo = styled.div`
@@ -27,7 +31,7 @@ const ContactInfo = styled.div`
   top: 50px;
   width: 100%;
   text-align: center;
-
+  padding-bottom: 1em;
   p {
     line-height: 1.5em;
     font-size: 14px;
@@ -65,7 +69,7 @@ const UserInfo = () => {
         src={"../images/profile.png"}
         alt={userName}
         layout="constrained"
-        height={150}
+        height={100}
         quality={100}
       />
       <UserName>{userName}</UserName>

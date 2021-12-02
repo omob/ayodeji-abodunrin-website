@@ -18,6 +18,7 @@ export const GlobalStyles = createGlobalStyle`
 }
 body {
   margin: 0;
+  padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
    background: ${({ theme }) => theme.body};

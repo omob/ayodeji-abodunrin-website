@@ -36,6 +36,13 @@ const TopBarLink = styled.div`
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+
+  @media (max-width: 850px) {
+    a {
+      margin: 1em;
+      font-size: 14px;
+    }
+  }
 `;
 
 const Header = ({ siteTitle }) => {

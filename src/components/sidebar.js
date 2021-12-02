@@ -11,6 +11,7 @@ const SideNavWrapper = styled.div`
   width: 300px;
   height: 100%;
   position: fixed;
+
   z-index: 1000;
   top: 0;
   left: 0;
@@ -24,7 +25,8 @@ const SideNavWrapper = styled.div`
   padding-top: 2em;
   @media (max-width: 550px) {
     & {
-      width: 250px;
+      width: 260px;
+      overflow-y: scroll;
     }
   }
 
@@ -61,10 +63,12 @@ const TopBarLink = styled.div`
     margin-right: 20px;
     text-decoration: none;
     color: inherit;
-    font-size: 18px;
+    font-size: 16px;
     font-style: italic;
     font-weight: 400;
     line-height: 1.7em;
+    display: block;
+    letter-spacing: 1px;
   }
 
   a:hover {
@@ -95,7 +99,7 @@ const SideBar = ({ isOpen = true }) => {
           <h3>Menu </h3>
           <Link to="/">Intro</Link>
           <Link to="/portfolio">Portfolio</Link>
-          <Link to="/work-history">Work-History</Link>
+          <Link to="/work-history">Experience</Link>
           <Link to="/blogs">Blogs</Link>
           <Link to="/hobbies">Hobbies</Link>
         </TopBarLink>
