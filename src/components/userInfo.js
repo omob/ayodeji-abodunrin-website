@@ -92,7 +92,7 @@ const UserInfo = () => {
         </p>
         <a href="mailto:aboayosam@gmail.com">Email: aboayosam@gmail.com</a>
         <a href="tel:+2348153706096">Call: +234(0)8153706096</a>
-        <a href="https://www.linkedin.com/in/abodunrinayodeji/">
+        <a href="https://www.linkedin.com/in/abodunrinayodeji/" target="_blank">
           LinkedIn: abodunrinayodeji
         </a>
       </ContactInfo>

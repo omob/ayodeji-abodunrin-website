@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
 import { StaticImage } from "gatsby-plugin-image";
+import { Link } from "gatsby";
 import {
   SectionWrapper,
   SocialLinkWrapper,
@@ -27,12 +28,20 @@ const HomePageContent = styled(SectionWrapper)`
 
 const BodyText = styled.p`
   text-align: center;
+
+  span.portfolio a {
+    color: inherit;
+    padding: 2px;
+    font-style: italic;
+  }
 `;
 
-const SocialLink = ({ label, url }) => {
+const SocialLink = ({ label, url, ...otherProps }) => {
   return (
     <SocialLinkWrapper>
-      <a href={url}>{label}</a>
+      <a href={url} {...otherProps}>
+        {label}
+      </a>
     </SocialLinkWrapper>
   );
 };
@@ -85,11 +94,29 @@ const IndexPage = () => {
           <span role="img" aria-label="smiley">
             &#128522;
           </span>
+          .{" "}
+          <span className="portfolio">
+            <Link to="/portfolio" aria-label="portfolio">
+              Click to view my portfolio{" "}
+            </Link>{" "}
+          </span>
         </BodyText>
         <div style={{ textAlign: "center" }}>
-          <SocialLink label="LinkedIn" url="http://www" />
-          <SocialLink label="Github" url="http://www" />
-          <SocialLink label="Email" url="http://www" />
+          <SocialLink
+            label="LinkedIn"
+            target="_blank"
+            url="https://www.linkedin.com/in/abodunrinayodeji/"
+          />
+          <SocialLink
+            label="Github"
+            target="_blank"
+            url="https://github.com/omob"
+          />
+          <SocialLink
+            label="Email"
+            target="_blank"
+            url="mailto:aboayosam@gmail.com"
+          />
         </div>
       </HomePageContent>
     </Layout>
