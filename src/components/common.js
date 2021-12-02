@@ -60,3 +60,8 @@ export const SocialLinkWrapper = styled.button`
     transition: 0.3s;
   }
 `;
+
+
+export const NoData = styled.p`
+  line-height: 1.5em;
+`;

@@ -5,6 +5,7 @@ import Layout from "../components/layout";
 // import Project from "../components/project";
 import SEO from "../components/seo";
 import { SectionWrapper } from "../components/common";
+import { NoData } from "./../components/common";
 
 const PortfolioPageWrapper = styled(SectionWrapper)`
   padding-top: 1em;
@@ -30,10 +31,6 @@ const ProjectsWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-`;
-
-const NoData = styled.p`
-  line-height: 1.5em;
 `;
 
 function BlogPage({ data }) {

@@ -1,11 +1,13 @@
 ---
 company: Deevcorp Digital Agency.
 role: Lead Software Engineer
-date: 2020 - Date
+date:
 type: experience
 postedDate: 2021-10-15
 ---
 
-- Developed an Interactive self-service feedback platform for all employees within the bank. The application provided a standardized channel for employees to provide immediate feedback on salient issues that may be affecting attitude and productivity.
-  - The application contained four independent modules which are - the Mood Module, the Request Module, the Polls Module and the Survery Module
-  - The technology stack used include - .NetCore, React.js and Microsoft SQL Server
+- Developed an employee shift scheduling and time-sheet management system for a client. The technology stack used include - Node.js, React.js, React Native and MongoDB
+- Developed an online retail application that allows customers browse through product catalogues and either pay immediately or opt-in for a subscription plan. The plans include; daily subscription, weekly subscription and monthly subscription.
+  - Customers who opt in for a subscription plan securely store their credit card information on the system which automatically bills them on the scheduled date.
+  - Customers who opt in for a one-off payment can pay using the preferred payment gateway.
+  - The technology stack used include - Node.js, React and MongoDB

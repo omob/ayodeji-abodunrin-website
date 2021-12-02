@@ -3,6 +3,7 @@ import Layout from "../components/layout";
 import Seo from "../components/seo";
 import { SectionWrapper } from "../components/common";
 import styled from "styled-components";
+import { NoData } from "./../components/common";
 
 const Container = styled(SectionWrapper)`
   padding-top: 1em;
@@ -10,7 +11,9 @@ const Container = styled(SectionWrapper)`
 `;
 
 const PageTitle = styled.h2`
+  font-size: 48px;
   background: ${({ theme }) => theme.colors.secondaryGradient};
+  padding: 15px 0;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 `;
@@ -25,6 +28,12 @@ function Hobbies(props) {
       <Container>
         {" "}
         <PageTitle>Outside Programming....</PageTitle>
+        <NoData>
+          Please check back later...{" "}
+          <span role="img" aria-label="smiley">
+            &#128522;
+          </span>
+        </NoData>
       </Container>
     </Layout>
   );

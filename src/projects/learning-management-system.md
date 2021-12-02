@@ -8,6 +8,8 @@ featuredImage: ../images/portfolio/featured/lms.png
 postedDate: 2020-11-15
 ---
 
+![Website Screen ](../images/portfolio/thumbnails/lms.png)
+
 In an attempt to improve the student/lecturer relationship, we developed a learning management system (LMS) with a feature for result processing. The solution incorporates a learning management system and a system for record processing.
 
 A learning management system is an application that is helpful within the administration hierarchy of a university; it aids the documentation, tracking, lecture, and delivery of academic courses, coaching programs, or other education and development programs.
@@ -22,8 +24,24 @@ A developed application with a learning management system and student record sys
 
 With such an application in place, everything involving the school’s regular activity can be seen on a single dashboard. Also, the development of this software for a university will abolish the need for having multiple management software for each department, aid the long term management and planning of all the departments of the university, and reduce the chances of mistakes in typing and re-entry of data which is common in the university management systems where it is done manually and prone to human mistakes and errors. The benefits embedded in the adoption of single application software that manages both the learning management system and student records in universities are endless.
 
-<!-- <img src="../images/portfolio/stack/react-dotnet.png" alt="Angular" style="width:50px;"/> -->
+#### Student View - Home Page
+
+![Student Home Screen ](../images/portfolio/featured/lms/student-dashboard.png)
+
+#### Student View - Courses Page
+
+![Student Home Screen ](../images/portfolio/featured/lms/student-courses.png)
+
+#### Student View - Courses Detail
+
+![Student Course Detail Screen ](../images/portfolio/featured/lms/student-course-detail.png)
+
+#### Student View - Profile Page
+
+![Student Profile Screen ](../images/portfolio/featured/lms/student-profile.png)
 
 #### [Go to Demo App](https://learning-management-syst-7a244.web.app/ "LMS System")
+
+`Login credentials for the demo app is in the readme file of github repo below`
 
 #### [View Github Repo](https://github.com/omob/LMS-FRONTEND "LMS FE")
