@@ -12,7 +12,7 @@ postedDate: 2021-11-15
 
 ## Case Study
 
-MLS is a security company where everything was manual. The processes for screening, onboarding, scheduling, client management, and administration were done with pen and paper, WhatsApp groups, and Excel spreadsheets.
+The Company is a security company where everything was manual. The processes for screening, onboarding, scheduling, client management, and administration were done with pen and paper, WhatsApp groups, and Excel spreadsheets.
 
 Typically, potential employees had to go through a long, cumbersome verification process, employees learned what they had to do each day in WhatsApp groups, while administrators manually entered all work information into Excel spreadsheets. This process required extra time, care, and effort and proved to be time-consuming, hectic, and error-prone for both managers and employees.
 
@@ -25,11 +25,12 @@ A web application was developed for administrators and a mobile app for employee
 - Review each potential employee in just 5 minutes
 - Add new employees to the company database extremely quickly
 - Manage clients, contracts, locations, and the total number of employees assigned to them.
-- Monitor employees, assigned locations, salaries, and required mileage.
-- Easily reassign shifts as needed
+- Monitor employees, assigned locations / shifts, salaries, and required mileage.
+- Easily assign and reassign shifts as needed
 - View each employee's work history
 - View any discrepancies and pay each employee correctly.
 - Easily keep track of the company's income and expenses.
+- Instant messaging between Employees and Administrators.
 
 And with the mobile app, employees can:
 
@@ -46,7 +47,7 @@ And with the mobile app, employees can:
 
 Of course, work has become easier for both employees and management.
 
-The apps developed for MLS gives them more transparency and accuracy, saving everyone time and effort.
+The apps developed for the security company gives them more transparency and accuracy, saving everyone time and effort.
 
 ### Some of the application Screens
 
@@ -71,3 +72,5 @@ The apps developed for MLS gives them more transparency and accuracy, saving eve
 ![Timesheet Page Screen ](../images/portfolio/featured/mls/Timesheet.png)
 <br />
 ![Timesheet Page Screen ](../images/portfolio/featured/mls/timesheet-detail.png)
+
+#### Technology Stack - Node.js, React, and MongoDB

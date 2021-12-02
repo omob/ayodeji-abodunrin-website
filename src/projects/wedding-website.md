@@ -12,7 +12,7 @@ postedDate: 2021-08-15
 
 ![Landing Page ](../images/portfolio/featured/tomade/home-page.png)
 
-When Tosin and Ade got engaged, they wanted a website where their loved ones could read their love story, view their beautiful picture gallery, and easily send them wedding presents- in cash or in kind.
+When Tomisin and Samson got engaged, they wanted a website where their loved ones could read their love story, view their beautiful picture gallery, and easily send them wedding presents- in cash or in kind.
 
 And that's exactly what I gave them!
 
@@ -39,3 +39,5 @@ And oh, the couple loved their website!
 #### [Go to Website](https://tomade2021.netlify.com/ "Samson & Tomisin")
 
 #### [View Github Repo](https://github.com/omob/tomade2021/ "Tomade2021")
+
+#### Technology Stack - Node.js, Gatsby, and Contentful CMS
