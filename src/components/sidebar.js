@@ -99,7 +99,7 @@ const SideBar = ({ isOpen = true }) => {
           <h3>Menu </h3>
           <Link to="/">Intro</Link>
           <Link to="/portfolio">Portfolio</Link>
-          <Link to="/work-history">Experience</Link>
+          <Link to="/work-history">Work History</Link>
           <Link to="/blogs">Blogs</Link>
           <Link to="/hobbies">Hobbies</Link>
         </TopBarLink>
