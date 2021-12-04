@@ -41,7 +41,7 @@ The online retail app is a platform where users (clients, customers, or business
 ![User View - Add Debit Card ](../images/portfolio/featured/retail-app/retail-add-card.png)
 
 
-#### <a href="https://retail-app.netlify.app/" target="_blank" title="Go to Demo App">Online Retail Store</a>
+#### <a href="https://retail-app.netlify.app/" target="_blank" title="Go to Demo App">View Demo website - Online Retail Store</a>
 `Sample Login credentials for the demo app is in the readme file of github repo below`
 
 #### <a href="https://github.com/omob/online-retail-application" target="_blank" title="View Github Repo">View Github Repo</a> 
