@@ -1,49 +1,31 @@
-# DeevCorp Digital Agency Website Template
+# Ayodeji Abodunrin Portfolio Website
 
+![Landing Page ](/landing-page.png)
 
-[![DEEVCORP|SOFTWARE DEVELOPMENT COMPANY](https://www.deevcorp.com/twitter-card.png)](https://www.deevcorp.com/)
+This portfolio website was made with love to easily help developers put their work out there. I've spent some time to make it as easy as possible for any one to adopt with little modifications and get running. The tech stack used is Gatsby (React Static Site Generator Framework ) and Markdown.
 
 ## Features
 - Responsive design
 - SEO Optimized with 100% score from LightHouse
-- Optimized Images
+- Optimized Images via Gatsby Plugin Image
 
 ## Tech
-
 - Gatsby JS - Static site generator for React Applications
 - React Js
-- Contentful [Content Management System]
+- Markdown 
 - GraphQL
 - Node.js
 
 ## Installation
-
-This template requires [Node.js](https://nodejs.org/) v10+ to run.
-Create a `.env.development` file at the root folder of the application and populate with `CONTENTFUL_SPACEID` and ``CONTENTFUL_ACCESS_TOKEN`` generated from [Contentful](https://www.contentful.com/). These fields are needed to run the application.
-
-```
-.env.development file
-CONTENTFUL_SPACEID = ************
-CONTENTFUL_ACCESS_TOKEN = ***************************
-```
-
 Install the dependencies and devDependencies and start the server.
 
 ```sh
-cd deeevcorp-website-template
+cd ayodeji-abodunrin-website
 npm i
 gatsby develop
-```
-
-For production environments...
-
-```sh
-npm install --production
-NODE_ENV=production node app
 ```
 
 ## Development
 
 Want to contribute? Great!
 
-## License

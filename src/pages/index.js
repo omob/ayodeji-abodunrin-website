@@ -77,20 +77,17 @@ const IndexPage = () => {
           Hi, <span>I'm Ayo! </span>
         </HeadingText>
         <BodyText>
-          I am a Software Engineer and a Solution provider with over 5 years of
-          professional experience. I have worked with React, Node.js, React
-          Native (Expo), .Net Core, and C#. I also have experience in UI/UX
-          design using Figma tools. I have a Master’s degree in Information
-          Technology from the University of Lagos, Nigeria and a BSc in Computer
-          Science.{" "}
-          <span>
-            I{" "}
-            <span role="img" aria-label="love">
-              &#128151;
-            </span>{" "}
-            building solutions that facilitates business processes and makes
-            users' life easier!{" "}
-          </span>
+          I am a software engineer and a solutions provider with over five (5)
+          years of professional experience. I have worked with React, Node.js,
+          React Native (Expo),.Net Core, and C# programming languages and
+          libraries/frameworks alike. I also have experience in UI/UX design
+          using Figma tools. I have a Master’s degree in Information Technology
+          from the University of Lagos, Nigeria and a BSc in Computer Science. I{" "}
+          <span role="img" aria-label="love">
+            &#128151;
+          </span>{" "}
+           building solutions that facilitate business processes and make users'
+          lives easier! 
           <span role="img" aria-label="smiley">
             &#128522;
           </span>
