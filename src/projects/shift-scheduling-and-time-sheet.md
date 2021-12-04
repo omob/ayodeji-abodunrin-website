@@ -4,7 +4,6 @@ stack: Angular, Node.js, MongoDB
 stackImage: ../images/portfolio/stack/node-react-mongo.png
 slug: shift-scheduling-system
 thumbnail: ../images/portfolio/thumbnails/mls.png
-featuredImage: ../images/portfolio/featured/mls.png
 postedDate: 2021-11-15
 ---
 

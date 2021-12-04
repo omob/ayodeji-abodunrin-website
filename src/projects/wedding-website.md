@@ -4,7 +4,6 @@ stack: React, Gatsby, Contentful
 stackImage: ../images/portfolio/stack/node-react-contentful.png
 slug: wedding-website
 thumbnail: ../images/portfolio/thumbnails/tomade2021.png
-featuredImage: ../images/portfolio/featured/lms.png
 postedDate: 2021-08-15
 ---
 

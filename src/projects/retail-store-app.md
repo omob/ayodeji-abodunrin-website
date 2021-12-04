@@ -4,7 +4,6 @@ stack: React, Node.js, MongoDB
 stackImage: ../images/portfolio/stack/node-react-mongo.png
 slug: online-retail-store
 thumbnail: ../images/portfolio/thumbnails/retail-home.png
-featuredImage: ../images/portfolio/featured/retail-app/retail-home.png
 postedDate: 2020-10-15
 ---
 

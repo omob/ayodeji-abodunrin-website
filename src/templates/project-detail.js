@@ -98,7 +98,6 @@ export const query = graphql`
   query GetSingleProject($slug: String) {
     project: markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       frontmatter {
-        featuredImage
         slug
         stack
         title

@@ -3,7 +3,7 @@ import React from "react";
 import styled from "styled-components";
 import Layout from "../components/layout";
 // import Project from "../components/project";
-import SEO from "../components/seo";
+import Seo from "../components/seo";
 import { SectionWrapper } from "../components/common";
 import { NoData } from "./../components/common";
 
@@ -37,7 +37,7 @@ function BlogPage({ data }) {
   const projects = data.projects.nodes;
   return (
     <Layout>
-      <SEO
+      <Seo
         title="Projects"
         description="Software Engineer - Ayodeji Abodunrin Portfolio Page"
       />
@@ -77,7 +77,6 @@ export const query = graphql`
     ) {
       nodes {
         frontmatter {
-          featuredImage
           slug
           stack
           title
