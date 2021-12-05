@@ -1,6 +1,6 @@
 # Ayodeji Abodunrin Portfolio Website
 
-![Landing Page ](/landing-page.png)
+![Landing Page ](https://ayodejiabodunrin.netlify.app/static/0a8ab6864a3f1eeed3071f9336943db3/29726/landing-page.png)
 
 This portfolio website was made with love to easily help developers put their work out there. I've spent some time to make it as easy as possible for any one to adopt with little modifications and get running. The tech stack used is Gatsby (React Static Site Generator Framework ) and Markdown.
 
