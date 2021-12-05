@@ -3,7 +3,7 @@ title: My Portfolio Website
 stack: React, Gatsby, Markdown
 stackImage: ../images/portfolio/stack/node-react.png
 slug: ayodeji-abodunrin-portfolio-website
-thumbnail: ../images/portfolio/thumbnails/personal-website.png
+thumbnail: ../images/portfolio/thumbnails/personal-website.jpg
 postedDate: 2021-12-04
 ---
 
