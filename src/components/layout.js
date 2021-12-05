@@ -9,7 +9,6 @@ import { GlobalStyles } from "./theme/global";
 import { darkTheme } from "./theme/theme";
 import uiTheme from "./theme/uiTheme";
 import ToggleSidebarButton from "./toggle/toggle-sidebar";
-
 const MainWraper = styled.div`
   display: grid;
   grid-template-columns: 300px auto;
@@ -71,7 +70,8 @@ const Layout = ({ children }) => {
     if (width < 768 && isSidebarOpen) setIsSidebarOpen(false);
   };
 
-  console.log(width, height);
+  const Footer = styled.footer``;
+
   return (
     <ThemeProvider theme={darkTheme}>
       <>
@@ -85,7 +85,6 @@ const Layout = ({ children }) => {
             ></ToggleSidebarButton>
             <SideBar isOpen={isSidebarOpen}></SideBar>
           </>
-          {/* <main onClick={handleCloseSidebar}>{children}</main> */}
           <main>{children}</main>
         </MainWraper>
       </>
