@@ -8,7 +8,7 @@ postedDate: 2019-11-15
 
 ![Website Screen ](../images/portfolio/thumbnails/pucwebsite.png)
 
-In 2017, I revamped the website of Paul Usoro & Co Legal Practitioner, a leading law firm in Nigeria (the Firm or Client). The Firm's defunct website required a  modern outlook that would properly portray the professionalism and leadership of the Firm in the Nigerian Legal Practice, devoid of issues.
+In 2017, I revamped the website of Paul Usoro & Co Legal Practitioner, a leading law firm in Nigeria (the Firm). The Firm's defunct website required a  modern outlook that would properly portray the professionalism and leadership of the Firm in the Nigerian Legal Practice, devoid of issues.
 
 ### Prior to the revamp
 
@@ -32,7 +32,7 @@ In 2017, I revamped the website of Paul Usoro & Co Legal Practitioner, a leading
 
 ### Solution
 
-The solution was to revamp the website to have a modern look targeting the latest design trends and ensuring simplicity. In doing so, I prepared on two attempts, a design which was accepted by the Managing Partner and adopted for the refurbishment.  The development process for the new design entailed a new photography session for staff of the Firm and a subsequent user acceptance test to the satisfaction of our Client before deployment.
+The solution was to revamp the website to have a modern look targeting the latest design trends and ensuring simplicity. In doing so, I prepared on two attempts, a design which was accepted by the Managing Partner and adopted for the refurbishment.  The development process for the new design entailed a new photography session for staff of the Firm and a subsequent user acceptance test to the satisfaction of the Partners before deployment.
 
 ### After Revamp Screens
 
