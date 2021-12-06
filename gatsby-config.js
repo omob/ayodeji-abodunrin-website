@@ -4,13 +4,13 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `Ayodeji Abodunrin Website`,
-    description: `A software development and solutions providing company`,
+    title: `Ayodeji Abodunrin Portfolio Website`,
+    description: ``,
     author: `@omo_b33`,
-    url: `https://deevcorp.netlify.app`,
-    twitterUsername: "@deevcorp",
+    url: `https://www.ayodejiabodunrin.com`,
+    twitterUsername: "@omob_33",
     image: "/twitter-card.png",
-    siteUrl: `https://deevcorp.netlify.app`,
+    siteUrl: `https://www.ayodejiabodunrin.com`,
   },
   plugins: [
     `gatsby-plugin-image`,
@@ -29,21 +29,21 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images/`,
+        path: `${__dirname}/src/images`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: "projects",
-        path: `${__dirname}/src/projects/`,
+        path: `${__dirname}/src/projects`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: "experience",
-        path: `${__dirname}/src/experience/`,
+        path: `${__dirname}/src/experience`,
       },
     },
     {
