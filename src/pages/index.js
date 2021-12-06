@@ -58,10 +58,7 @@ const UserImageWrapper = styled.div`
 const IndexPage = () => {
   return (
     <Layout>
-      <Seo
-        title="Home"
-        description="Software Engineer - Ayodeji Abodunrin Personal Website"
-      />
+      <Seo title="Home" description="Software Engineer - Ayodeji Abodunrin" />
       <HomePageContent>
         <UserImageWrapper>
           <StaticImage
