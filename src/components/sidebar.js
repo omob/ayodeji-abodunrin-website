@@ -1,7 +1,7 @@
-import React, { useContext } from "react";
-import styled, { ThemeContext } from "styled-components";
-import UserInfo from "./userInfo";
 import { Link } from "gatsby";
+import React, { useEffect, useState } from "react";
+import styled from "styled-components";
+import UserInfo from "./userInfo";
 
 const Root = styled.div`
   position: relative;
@@ -70,6 +70,11 @@ const TopBarLink = styled.div`
     display: block;
     letter-spacing: 1px;
   }
+  a.active {
+    background: linear-gradient(180deg, #ff732d 0%, #ef5337 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
   a:hover {
     background: linear-gradient(180deg, #ff732d 0%, #ef5337 100%);
@@ -90,18 +95,52 @@ const Divider = styled.div`
   }
 `;
 
+const navUrls = [
+  {
+    url: "/",
+    label: "Intro",
+  },
+  {
+    url: "/portfolio",
+    label: "Portfolio",
+  },
+  {
+    url: "/work-history",
+    label: "Work history",
+  },
+  {
+    url: "/blogs",
+    label: "Blog",
+  },
+  {
+    url: "/hobbies",
+    label: "Hobbies",
+  },
+];
+
 const SideBar = ({ isOpen = true }) => {
-  const themeContext = useContext(ThemeContext);
+  const [location, setLocation] = useState(null);
+
+  useEffect(() => {
+    if (typeof window !== `undefined`) {
+      setLocation(window.location);
+    }
+  }, []);
+
   return (
     <Root>
       <SideNavWrapper isOpen={isOpen}>
         <TopBarLink>
           <h3>Menu </h3>
-          <Link to="/">Intro</Link>
-          <Link to="/portfolio">Portfolio</Link>
-          <Link to="/work-history">Work History</Link>
-          <Link to="/blogs">Blogs</Link>
-          <Link to="/hobbies">Hobbies</Link>
+          {navUrls.map(({ label, url }) => (
+            <Link
+              key={label}
+              to={url}
+              className={location?.pathname === url ? "active" : null}
+            >
+              {label}
+            </Link>
+          ))}
         </TopBarLink>
         <Divider />
         <UserInfo />

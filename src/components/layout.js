@@ -70,8 +70,6 @@ const Layout = ({ children }) => {
     if (width < 768 && isSidebarOpen) setIsSidebarOpen(false);
   };
 
-  const Footer = styled.footer``;
-
   return (
     <ThemeProvider theme={darkTheme}>
       <>

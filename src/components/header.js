@@ -1,6 +1,6 @@
 import { Link } from "gatsby";
 import PropTypes from "prop-types";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 
 const HeaderWrapper = styled.header`
@@ -31,6 +31,12 @@ const TopBarLink = styled.div`
     font-weight: bold;
   }
 
+  a.active {
+    background: linear-gradient(180deg, #ff732d 0%, #ef5337 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
   a:hover {
     background: linear-gradient(180deg, #ff732d 0%, #ef5337 100%);
     -webkit-background-clip: text;
@@ -45,17 +51,51 @@ const TopBarLink = styled.div`
   }
 `;
 
+const navUrls = [
+  {
+    url: "/",
+    label: "Intro",
+  },
+  {
+    url: "/portfolio",
+    label: "Portfolio",
+  },
+  {
+    url: "/work-history",
+    label: "Work history",
+  },
+  {
+    url: "/blogs",
+    label: "Blog",
+  },
+  {
+    url: "/hobbies",
+    label: "Hobbies",
+  },
+];
+
 const Header = ({ siteTitle }) => {
+  const [location, setLocation] = useState(null);
+
+  useEffect(() => {
+    if (typeof window !== `undefined`) {
+      setLocation(window.location);
+    }
+  }, []);
+
   return (
     <HeaderWrapper>
       <NavBar>
         <TopBarLink>
-          <Link to="/">Intro</Link>
-          {/* <Link to="/about">About</Link> */}
-          <Link to="/portfolio">Portfolio</Link>
-          <Link to="/work-history">Work History</Link>
-          <Link to="/blogs">Blogs</Link>
-          <Link to="/hobbies">Hobbies</Link>
+          {navUrls.map(({ label, url }) => (
+            <Link
+              key={label}
+              to={url}
+              className={location?.pathname === url ? "active" : null}
+            >
+              {label}
+            </Link>
+          ))}
         </TopBarLink>
       </NavBar>
     </HeaderWrapper>
