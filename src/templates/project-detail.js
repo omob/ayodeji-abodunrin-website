@@ -28,11 +28,9 @@ const SectionWrapper = styled.section`
     color: inherit;
   }
   @media (max-width: 768px) {
-    ${
-      "" /* p {
+    ${"" /* p {
       font-size: 1.26em;
-    } */
-    }
+    } */}
   }
 `;
 
@@ -57,6 +55,22 @@ const Content = styled(SectionWrapper)`
   padding-top: 0;
   height: contain;
   font-size: 16px;
+
+  table td {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+
+  @media (min-width: 768px) {
+    table td {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+  }
+
+  code {
+    background-color: #2c1d1d;
+  }
 `;
 
 const BreadCrumbs = styled.div`
