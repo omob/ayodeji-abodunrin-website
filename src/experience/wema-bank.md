@@ -1,7 +1,7 @@
 ---
 company: Wema Bank Plc.
 role: Software Engineer -Automation & Innovations
-date: April 2021 - April 2022
+date: April 2021 - July 2022
 type: experience
 postedDate: 2021-11-15
 ---
