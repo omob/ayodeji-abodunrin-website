@@ -42,8 +42,13 @@ With such an application in place, everything involving the school’s regular a
 
 ![Student Profile Screen ](../images/portfolio/featured/lms/student-profile.png)
 
-#### [Go to Demo App](https://learning-management-syst-7a244.web.app/ "LMS System")
+<h5>
+<a href="https://learning-management-syst-7a244.web.app" target="_blank" title="Learning management system">
+Go to Demo App
+</h5>
 
 `Login credentials for the demo app is in the readme file of github repo below`
 
-#### [View Github Repo](https://github.com/omob/LMS-FRONTEND "LMS FE")
+<h5>
+<a href="https://github.com/omob/LMS-FRONTEND" target="_blank" title="LMS-FRONTEND">View Github Repo</a>
+</h5>

@@ -40,8 +40,12 @@ And oh, the couple loved their website!
 
 <hr />
 
-#### [Go to Website](https://tomade2021.netlify.com/ "Samson & Tomisin")
+<h5>
+<a href="https://tomade2021.netlify.com/" target="_blank"> Go to website</a>
+</h5>
 
-#### [View Github Repo](https://github.com/omob/tomade2021/ "Tomade2021")
+<h5>
+<a href="https://github.com/omob/tomade2021/" target="_blank"> View Github Repo</a>
+</h5>
 
 #### Technology Stack - Node.js, Gatsby, and Contentful CMS
