@@ -5,6 +5,7 @@ stackImage: ../images/portfolio/stack/node-react-mongo.png
 slug: shift-scheduling-system
 thumbnail: ../images/portfolio/thumbnails/mls.png
 postedDate: 2021-11-15
+type: portfolios
 ---
 
 ![Web Application Screens ](../images/portfolio/thumbnails/mls.png)

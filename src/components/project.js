@@ -43,16 +43,18 @@ const ProjectStack = styled.div`
   }
 `;
 
-const Project = ({ title, stack, slug, stackImage, thumbnail }) => {
+const Project = ({ title, stack, slug, type, stackImage, thumbnail }) => {
   return (
     <ProjectItem>
-      <ProjectStack>
-        <GatsbyImage image={getImage(stackImage)} alt={stack} />
-      </ProjectStack>
+      {stack && (
+        <ProjectStack>
+          <GatsbyImage image={getImage(stackImage)} alt={stack} />
+        </ProjectStack>
+      )}
       <GatsbyImage image={getImage(thumbnail)} alt={title} />
       <ProjectTitle>{title} </ProjectTitle>
       <ProjectLinkButton>
-        <Link to={`/projects/${slug}`}>Details</Link>
+        <Link to={`/${type}/${slug}`}>Details</Link>
       </ProjectLinkButton>
     </ProjectItem>
   );

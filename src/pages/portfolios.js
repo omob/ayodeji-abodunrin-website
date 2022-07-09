@@ -1,12 +1,10 @@
 import { graphql } from "gatsby";
 import React from "react";
 import styled from "styled-components";
-import Layout from "./../components/layout";
-import Project from "./../components/project";
-import Seo from "./../components/seo";
-import {
-  SectionWrapper,
-} from "../components/common";
+import Layout from "../components/layout";
+import Project from "../components/project";
+import Seo from "../components/seo";
+import { SectionWrapper } from "../components/common";
 
 const PortfolioPageWrapper = styled(SectionWrapper)`
   padding-top: 1em;
@@ -33,18 +31,18 @@ const ProjectsWrapper = styled.div`
   justify-content: space-between;
 `;
 
-function ProjectsPage({ data }) {
-  const projects = data.projects.nodes;
+function PortfolioPage({ data }) {
+  const portfolios = data.portfolios.nodes;
   return (
     <Layout>
       <Seo
-        title="Projects"
+        title="Portfolios"
         description="Software Engineer - Ayodeji Abodunrin Portfolio Page"
       />
       <PortfolioPageWrapper>
         <PageTitle>Portfolios </PageTitle>
         <ProjectsWrapper>
-          {projects.map(({ frontmatter, id }) => (
+          {portfolios.map(({ frontmatter, id }) => (
             <Project
               key={id}
               title={frontmatter.title}
@@ -52,6 +50,7 @@ function ProjectsPage({ data }) {
               stack={frontmatter.stack}
               stackImage={frontmatter.stackImage}
               thumbnail={frontmatter.thumbnail}
+              type={"portfolios"}
             />
           ))}
         </ProjectsWrapper>
@@ -60,12 +59,12 @@ function ProjectsPage({ data }) {
   );
 }
 
-export default ProjectsPage;
+export default PortfolioPage;
 
 export const query = graphql`
   {
-    projects: allMarkdownRemark(
-      filter: { frontmatter: { type: { ne: "experience" } } }
+    portfolios: allMarkdownRemark(
+      filter: { frontmatter: { type: { eq: "portfolios" } } }
       sort: { fields: frontmatter___postedDate, order: DESC }
     ) {
       nodes {
@@ -73,6 +72,7 @@ export const query = graphql`
           slug
           stack
           title
+          type
           stackImage {
             childImageSharp {
               gatsbyImageData(

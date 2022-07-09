@@ -4,6 +4,7 @@ stack: PHP, HTML, Vanilla Javascript
 slug: paul-usoro-and-co
 thumbnail: ../images/portfolio/thumbnails/pucwebsite.png
 postedDate: 2019-11-15
+type: portfolios
 ---
 
 ![Website Screen ](../images/portfolio/thumbnails/pucwebsite.png)

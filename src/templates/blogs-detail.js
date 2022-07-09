@@ -90,27 +90,26 @@ const BreadCrumbs = styled.div`
   }
 `;
 
-const ProjectDetail = ({ data: { project } }) => {
+const BlogDetail = ({ data: { blog } }) => {
   return (
     <Layout>
-      <Seo title={project.frontmatter.title} />
+      <Seo title={blog.frontmatter.title} />
 
       <HeaderBanner>
-        <h1>{project.frontmatter.title}</h1>
+        <h1>{blog.frontmatter.title}</h1>
         <BreadCrumbs>
-          <Link to="/">Home</Link> {">"}{" "}
-          <Link to="/portfolio"> Porfolios </Link>
-          {">"} {project.frontmatter.title}
+          <Link to="/">Home</Link> {">"} <Link to="/blogs"> Blogs </Link>
+          {">"} {blog.frontmatter.title}
         </BreadCrumbs>
       </HeaderBanner>
-      <Content dangerouslySetInnerHTML={{ __html: project.html }} />
+      <Content dangerouslySetInnerHTML={{ __html: blog.html }} />
     </Layout>
   );
 };
 
 export const query = graphql`
-  query GetSingleProject($slug: String) {
-    project: markdownRemark(frontmatter: { slug: { eq: $slug } }) {
+  query GetSingleBlog($slug: String) {
+    blog: markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       frontmatter {
         slug
         stack
@@ -121,4 +120,4 @@ export const query = graphql`
   }
 `;
 
-export default ProjectDetail;
+export default BlogDetail;
