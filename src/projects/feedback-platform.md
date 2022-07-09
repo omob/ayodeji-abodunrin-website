@@ -59,17 +59,30 @@ Below is a detailed functional specification on how each actor interact with the
 
 #### Some Employee Dashboard Screens
 
-|                                                                                                               |                                                                                                                             |
+![Employee_Edit_Mood ](../images/portfolio/featured/feedback-platform/Employee_Dashboard_Edit_Mood.png)
+
+![Employee_Edit_Multi_Topics ](../images/portfolio/featured/feedback-platform/Employee_Dashboard_Multi_Topics.png)
+
+![Employee_Dashboard_Other_Topics ](../images/portfolio/featured/feedback-platform/Employee_Other_Topics.png)
+
+![Employee_Dashboard_Topic_Feedback ](../images/portfolio/featured/feedback-platform/Employee_Dashboard_Topic_Feedback.png)
+
+<!-- |                                                                                                               |                                                                                                                             |
 | :------------------------------------------------------------------------------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------- |
 | ![Employee_Edit_Mood ](../images/portfolio/featured/feedback-platform/Employee_Dashboard_Edit_Mood.png)       | ![Employee_Edit_Multi_Topics ](../images/portfolio/featured/feedback-platform/Employee_Dashboard_Multi_Topics.png)          |
-| ![Employee_Dashboard_Other_Topics ](../images/portfolio/featured/feedback-platform/Employee_Other_Topics.png) | ![Employee_Dashboard_Topic_Feedback ](../images/portfolio/featured/feedback-platform/Employee_Dashboard_Topic_Feedback.png) |
+| ![Employee_Dashboard_Other_Topics ](../images/portfolio/featured/feedback-platform/Employee_Other_Topics.png) | ![Employee_Dashboard_Topic_Feedback ](../images/portfolio/featured/feedback-platform/Employee_Dashboard_Topic_Feedback.png) | -->
 
 #### Some Screens for Admin
 
-|                                                                                                             |                                                                                                                                |
+![Admin_Dashboard_Topics ](../images/portfolio/featured/feedback-platform/Admin_Dashboard_Topics.png)
+![Admin_Dashboard_Topic_Page ](../images/portfolio/featured/feedback-platform/Admin_Dashboard_Topic_Page_Add_New.png)
+![Admin_Dashboard_Mood_Home ](../images/portfolio/featured/feedback-platform/Admin_Dashboard_Mood_Home.png)
+![Admin_Dashboard_Employee_Mood_Modal](../images/portfolio/featured/feedback-platform/Admin_Dashboard_Employee_Mood_Modal.png)
+
+<!-- |                                                                                                             |                                                                                                                                |
 | :---------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------- |
 | ![Admin_Dashboard_Topics ](../images/portfolio/featured/feedback-platform/Admin_Dashboard_Topics.png)       | ![Admin_Dashboard_Topic_Page ](../images/portfolio/featured/feedback-platform/Admin_Dashboard_Topic_Page_Add_New.png)          |
-| ![Admin_Dashboard_Mood_Home ](../images/portfolio/featured/feedback-platform/Admin_Dashboard_Mood_Home.png) | ![Admin_Dashboard_Employee_Mood_Modal](../images/portfolio/featured/feedback-platform/Admin_Dashboard_Employee_Mood_Modal.png) |
+| ![Admin_Dashboard_Mood_Home ](../images/portfolio/featured/feedback-platform/Admin_Dashboard_Mood_Home.png) | ![Admin_Dashboard_Employee_Mood_Modal](../images/portfolio/featured/feedback-platform/Admin_Dashboard_Employee_Mood_Modal.png) | -->
 
 ### The Request Module
 
@@ -105,9 +118,9 @@ The Request Module allowed employees raise requests regarding any issue. An admi
 
 ---
 
-```sh
+<code>
 Polls and survey screens will be added soon... 😊
-```
+</code>
 
 ---
 
