@@ -5,6 +5,7 @@ stackImage: ../images/portfolio/stack/react-dotnet-sql.png
 slug: feedback-platform
 thumbnail: ../images/portfolio/thumbnails/mood-platform.png
 postedDate: 2022-07-06
+type: portfolios
 ---
 
 ![Website Screen ](../images/portfolio/thumbnails/mood-platform.png)

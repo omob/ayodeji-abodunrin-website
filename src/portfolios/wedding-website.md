@@ -5,6 +5,7 @@ stackImage: ../images/portfolio/stack/node-react-contentful.png
 slug: wedding-website
 thumbnail: ../images/portfolio/thumbnails/tomade2021.png
 postedDate: 2021-08-15
+type: portfolios
 ---
 
 ## Love is beautiful.

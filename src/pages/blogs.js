@@ -2,10 +2,11 @@ import { graphql } from "gatsby";
 import React from "react";
 import styled from "styled-components";
 import Layout from "../components/layout";
-// import Project from "../components/project";
+import Project from "../components/project";
 import Seo from "../components/seo";
 import { SectionWrapper } from "../components/common";
 import { NoData } from "./../components/common";
+import { PropTypes } from "prop-types";
 
 const PortfolioPageWrapper = styled(SectionWrapper)`
   padding-top: 1em;
@@ -34,34 +35,36 @@ const ProjectsWrapper = styled.div`
 `;
 
 function BlogPage({ data }) {
-  const projects = data.projects.nodes;
+  const blogs = data.blogs.nodes;
   return (
     <Layout>
       <Seo
-        title="Projects"
+        title="News, Events, and Trainings"
         description="Software Engineer - Ayodeji Abodunrin Portfolio Page"
       />
       <PortfolioPageWrapper>
         <PageTitle>News & Trainings </PageTitle>
 
-        <NoData>
-          Please check back later...{" "}
-          <span role="img" aria-label="smiley">
-            &#128522;
-          </span>
-        </NoData>
-        {/* <ProjectsWrapper>
-          {projects.map(({ frontmatter, id }) => (
+        {blogs && blogs.length === 0 && (
+          <NoData>
+            Please check back later...{" "}
+            <span role="img" aria-label="smiley">
+              &#128522;
+            </span>
+          </NoData>
+        )}
+
+        <ProjectsWrapper>
+          {blogs.map(({ frontmatter, id }) => (
             <Project
               key={id}
               title={frontmatter.title}
-              slug={frontmatter.slug}
-              stack={frontmatter.stack}
-              stackImage={frontmatter.stackImage}
               thumbnail={frontmatter.thumbnail}
+              slug={frontmatter.slug}
+              type={"blogs"}
             />
           ))}
-        </ProjectsWrapper> */}
+        </ProjectsWrapper>
       </PortfolioPageWrapper>
     </Layout>
   );
@@ -71,24 +74,15 @@ export default BlogPage;
 
 export const query = graphql`
   {
-    projects: allMarkdownRemark(
-      filter: { frontmatter: { type: { ne: "experience" } } }
+    blogs: allMarkdownRemark(
+      filter: { frontmatter: { type: { eq: "blogs" } } }
       sort: { fields: frontmatter___postedDate, order: DESC }
     ) {
       nodes {
         frontmatter {
           slug
-          stack
           title
-          stackImage {
-            childImageSharp {
-              gatsbyImageData(
-                placeholder: BLURRED
-                formats: [AUTO, WEBP, AVIF]
-                height: 20
-              )
-            }
-          }
+          type
           thumbnail {
             childImageSharp {
               gatsbyImageData(

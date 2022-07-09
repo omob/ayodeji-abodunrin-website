@@ -5,6 +5,7 @@ stackImage: ../images/portfolio/stack/node-angular-mongo.png
 slug: learning-management-system
 thumbnail: ../images/portfolio/thumbnails/lms.png
 postedDate: 2020-02-15
+type: portfolios
 ---
 
 ![Website Screen ](../images/portfolio/thumbnails/lms.png)

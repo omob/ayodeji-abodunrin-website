@@ -90,7 +90,7 @@ const IndexPage = () => {
           </span>
           .{" "}
           <span className="portfolio">
-            <Link to="/portfolio" aria-label="portfolio">
+            <Link to="/portfolios" aria-label="portfolio">
               Click to view my portfolio{" "}
             </Link>{" "}
           </span>
