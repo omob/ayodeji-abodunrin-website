@@ -101,16 +101,16 @@ const navUrls = [
     label: "Intro",
   },
   {
-    url: "/portfolio",
-    label: "Portfolio",
-  },
-  {
-    url: "/work-history",
-    label: "Work history",
+    url: "/portfolios",
+    label: "Portfolios",
   },
   {
     url: "/blogs",
     label: "Blog",
+  },
+  {
+    url: "/work-history",
+    label: "Work history",
   },
   {
     url: "/hobbies",
@@ -136,7 +136,12 @@ const SideBar = ({ isOpen = true }) => {
             <Link
               key={label}
               to={url}
-              className={location?.pathname === url ? "active" : null}
+              className={
+                location?.pathname === url ||
+                location?.pathname.includes(label.toLowerCase())
+                  ? "active"
+                  : null
+              }
             >
               {label}
             </Link>
